@@ -5,9 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Luis' Personal Site</title>
+		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
-		<table cellspacing="20">
+		<table id="introductionPart" cellspacing="20">
 			<td>
 				<img
 					src="images/LuisPic.png"
@@ -21,30 +22,47 @@
 				<p>
 					<em><strong>Web Development</strong> Student</em>
 				</p>
-				<p>I am studying Computer Science mixed with Economics.</p>
+				<p>
+					I am studying Computer Science mixed with Economics.<br />
+					Currently I am participating in an online Web Developement Bootcamp.
+				</p>
 			</td>
 		</table>
 		<hr />
 		<h3>Education</h3>
-		<ul>
-			<li>
-				<a href="https://gms-hirschaid.edupage.org/">Grundschule Hirschaid</a>
-				2006 - 2010
-			</li>
-			<li>
-				<a href="https://www.dg-info.de/">Dientzenhofer Gymnasium Bamberg</a>
-				2011 - 2019
-			</li>
-			<li>
-				<a href="https://www.fau.de/"
-					>Friedrich Alexander University Erlangen</a
-				>
-				2020 - current
-			</li>
-		</ul>
+		<table class="listingTables" cellspacing="10">
+			<thead>
+				<tr>
+					<th>Dates</th>
+					<th>School</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2006 - 2010</td>
+					<td>
+						<a href="https://gms-hirschaid.edupage.org/"
+							>Grundschule Hirschaid</a
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>2011 - 2019</td>
+					<td>
+						<a href="https://www.dg-info.de/">DG Bamberg</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2020 - current</td>
+					<td>
+						<a href="https://www.fau.de/">FAU Erlangen</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 		<hr />
 		<h3>Work Experience</h3>
-		<table cellspacing="10">
+		<table class="listingTables" cellspacing="10">
 			<thead>
 				<tr>
 					<th>Dates</th>
@@ -53,8 +71,16 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td>2017</td>
+					<td>2015</td>
+					<td>Workplacement La Spelonca</td>
+				</tr>
+				<tr>
+					<td>2016</td>
 					<td>Workplacement Favendo</td>
+				</tr>
+				<tr>
+					<td>2017</td>
+					<td>Workplacement Bedford School</td>
 				</tr>
 				<tr>
 					<td>2019 - 2020</td>
@@ -64,7 +90,7 @@
 		</table>
 		<hr />
 		<h3>Skills</h3>
-		<table>
+		<table class="listingTables">
 			<td>
 				<table cellspacing="10">
 					<thead>
@@ -77,6 +103,10 @@
 						</tr>
 						<tr>
 							<td>HTML</td>
+							<td>★★★☆☆</td>
+						</tr>
+						<tr>
+							<td>CSS</td>
 							<td>★★★☆☆</td>
 						</tr>
 					</tbody>
@@ -93,6 +123,10 @@
 							<td>★★★★★</td>
 						</tr>
 						<tr>
+							<td>Discipline</td>
+							<td>★★★★★</td>
+						</tr>
+						<tr>
 							<td>Leadership</td>
 							<td>★★★☆☆</td>
 						</tr>
@@ -101,7 +135,6 @@
 			</td>
 		</table>
 		<hr />
-		<a href="hobbies.html"><h3>My Hobbies</h3></a>
-		<a href="contact.html"><h3>Contact Me</h3></a>
+		<a href="contact.html"><h3 id="contactLink">Contact Me</h3></a>
 	</body>
 </html>
